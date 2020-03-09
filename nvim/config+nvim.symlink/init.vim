@@ -18,6 +18,7 @@ let g:loaded_netrwPlugin  = 1
 
 " Load plugin customizations
 exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
+exe 'source ' . s:path . '/custom/plugins/coc.vim'
 exe 'source ' . s:path . '/custom/plugins/neosolarized.vim'
 
 " Personal customizations
