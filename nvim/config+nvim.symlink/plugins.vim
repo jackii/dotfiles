@@ -3,3 +3,6 @@
 
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Solarized theme
+Plug 'iCyMind/NeoSolarized'
