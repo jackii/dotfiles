@@ -8,3 +8,6 @@ call plug#end()
 " Disable netrw /
 let g:loaded_netrw        = 1
 let g:loaded_netrwPlugin  = 1
+
+" Load plugin customizations
+exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
