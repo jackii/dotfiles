@@ -1,1 +1,7 @@
-My Dotfile
+# My Dotfile
+
+To install run
+
+```zsh
+script/bootstrap
+```
