@@ -9,6 +9,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mileszs/ack.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'neoclide/vim-jsx-improve'
 
 " Solarized theme
 Plug 'iCyMind/NeoSolarized'

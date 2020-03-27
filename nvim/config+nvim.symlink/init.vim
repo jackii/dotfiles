@@ -22,6 +22,7 @@ exe 'source ' . s:path . '/custom/plugins/coc.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
 exe 'source ' . s:path . '/custom/plugins/ack.vim'
 exe 'source ' . s:path . '/custom/plugins/neosolarized.vim'
+exe 'source ' . s:path . '/custom/plugins/vim-jsx-typescript.vim'
 
 " Personal customizations
 exe 'source ' . s:path . '/custom/custom.vim'
