@@ -18,11 +18,16 @@ let g:loaded_netrwPlugin  = 1
 
 " Load plugin customizations
 exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
-exe 'source ' . s:path . '/custom/plugins/coc.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
 exe 'source ' . s:path . '/custom/plugins/ack.vim'
 exe 'source ' . s:path . '/custom/plugins/neosolarized.vim'
+exe 'source ' . s:path . '/custom/plugins/vim-jsx-improve.vim'
 exe 'source ' . s:path . '/custom/plugins/vim-jsx-typescript.vim'
+
+exe 'source ' . s:path . '/custom/plugins/coc.vim'
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 
 " Personal customizations
 exe 'source ' . s:path . '/custom/custom.vim'
