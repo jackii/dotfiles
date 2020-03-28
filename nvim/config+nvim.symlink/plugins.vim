@@ -21,9 +21,9 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
 " Javascript, Typescript, React
+Plug 'neoclide/vim-jsx-improve'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug 'neoclide/vim-jsx-improve'
 
 " Themes
 "
