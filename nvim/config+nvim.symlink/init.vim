@@ -24,9 +24,6 @@ exe 'source ' . s:path . '/custom/plugins/neosolarized.vim'
 exe 'source ' . s:path . '/custom/plugins/vim-jsx-improve.vim'
 
 exe 'source ' . s:path . '/custom/plugins/coc.vim'
-let g:coc_global_extensions = [
-  \ 'coc-tsserver'
-  \ ]
 
 " Personal customizations
 exe 'source ' . s:path . '/custom/custom.vim'

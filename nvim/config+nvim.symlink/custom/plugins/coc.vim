@@ -136,3 +136,31 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 let g:coc_config_home  = ''
+
+"
+" Extensions
+"
+if plugged#is_plugin_enabled("coc")
+  let g:coc_global_extensions = [
+    \ 'coc-tsserver'
+    \ ]
+
+  " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#prettier-and-eslint
+  if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+    let g:coc_global_extensions += ['coc-prettier']
+  endif
+
+  if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+    let g:coc_global_extensions += ['coc-eslint']
+  endif
+
+  " sometime the /node_modules folder is at the /client subfolder
+  if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/prettier')
+    let g:coc_global_extensions += ['coc-prettier']
+  endif
+
+  " sometime the /node_modules folder is at the /client subfolder
+  if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/eslint')
+    let g:coc_global_extensions += ['coc-eslint']
+  endif
+endif

@@ -1,2 +1,31 @@
 {
+  "coc": {
+    "preferences": {
+      "formatOnSaveFiletypes": [
+        "css",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "typescript",
+        "typescriptreact"
+      ],
+      "formatOnType": true,
+    }
+  },
+  "eslint": {
+    "autoFixOnSave": true,
+    "filetypes":  ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  },
+  "prettier": {
+    "disableSuccessMessage": true,
+    "eslintIntegration": true,
+    "printWidth": 120,
+    "singleQuote": true,
+    "stylelintIntegration": true,
+    "trailingComma": "all",
+    "tslintIntegration": true,
+  },
+  "tsserver": {
+    "formatOnType": true,
+  },
 }
