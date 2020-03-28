@@ -12,6 +12,7 @@
       "formatOnType": true,
     }
   },
+
   "eslint": {
     "autoFixOnSave": true,
     "filetypes":  ["javascript", "javascriptreact", "typescript", "typescriptreact"],

@@ -145,7 +145,8 @@ let g:coc_config_home  = ''
 " Extensions
 "
 let g:coc_global_extensions = [
-  \ 'coc-tsserver'
+  \ 'coc-tsserver',
+  \ 'coc-pairs',
   \ ]
 
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#prettier-and-eslint
