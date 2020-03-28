@@ -85,6 +85,10 @@ augroup end
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
+" Apply codeAction on the word under the cursor
+" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#performing-code-actions
+nmap <leader>do <Plug>(coc-codeaction)
+
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
@@ -163,7 +167,7 @@ if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/es
   let g:coc_global_extensions += ['coc-eslint']
 endif
 
-" Show tooltip for word under the cursor after 500ms, see either the diagnostic if it exists, otherwise the 
+" Show tooltip for word under the cursor after 500ms, see either the diagnostic if it exists, otherwise the
 " documentation.
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#tool-tip-documentation-and-diagnostics
 function! ShowDocIfNoDiagnostic(timer_id)
