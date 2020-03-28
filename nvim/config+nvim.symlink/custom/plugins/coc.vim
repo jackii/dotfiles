@@ -147,6 +147,7 @@ let g:coc_config_home  = ''
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-pairs',
+  \ 'coc-highlight'
   \ ]
 
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#prettier-and-eslint
@@ -183,3 +184,7 @@ endfunction
 
 autocmd CursorHoldI * :call <SID>show_hover_doc()
 autocmd CursorHold * :call <SID>show_hover_doc()
+
+" color of the highlight
+highlight CocHighlightText  guibg=#111111 ctermbg=223
+
