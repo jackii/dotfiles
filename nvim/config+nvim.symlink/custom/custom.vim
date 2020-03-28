@@ -26,13 +26,8 @@ hi CursorLine term=none cterm=none ctermbg=0
 " http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Strip trailing whitespaces when save
-" NOT REQUIRED, SAME AS THE ONE ABOVE
-"fun! <SID>StripTrailingWhitespaces()
-"    let l = line(".")
-"    let c = col(".")
-"    %s/\s\+$//e
-"    call cursor(l, c)
-"endfun
-
-"autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+" Rescan entire buffer when highlighting large jsx and tsx files
+" Enable this when I enter a JavaScript or TypeScript buffer, and disable it when I leave:
+" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#highlighting-for-large-files
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
