@@ -140,27 +140,41 @@ let g:coc_config_home  = ''
 "
 " Extensions
 "
-if plugged#is_plugin_enabled("coc")
-  let g:coc_global_extensions = [
-    \ 'coc-tsserver'
-    \ ]
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 
-  " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#prettier-and-eslint
-  if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-    let g:coc_global_extensions += ['coc-prettier']
-  endif
-
-  if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-    let g:coc_global_extensions += ['coc-eslint']
-  endif
-
-  " sometime the /node_modules folder is at the /client subfolder
-  if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/prettier')
-    let g:coc_global_extensions += ['coc-prettier']
-  endif
-
-  " sometime the /node_modules folder is at the /client subfolder
-  if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/eslint')
-    let g:coc_global_extensions += ['coc-eslint']
-  endif
+" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#prettier-and-eslint
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
 endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
+
+" sometime the /node_modules folder is at the /client subfolder
+if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+" sometime the /node_modules folder is at the /client subfolder
+if isdirectory('./client/node_modules') && isdirectory('./client/node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
+
+" Show tooltip for word under the cursor after 500ms, see either the diagnostic if it exists, otherwise the 
+" documentation.
+" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#tool-tip-documentation-and-diagnostics
+function! ShowDocIfNoDiagnostic(timer_id)
+  if (coc#util#has_float() == 0)
+    silent call CocActionAsync('doHover')
+  endif
+endfunction
+
+function! s:show_hover_doc()
+  call timer_start(500, 'ShowDocIfNoDiagnostic')
+endfunction
+
+autocmd CursorHoldI * :call <SID>show_hover_doc()
+autocmd CursorHold * :call <SID>show_hover_doc()
