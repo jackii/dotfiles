@@ -9,6 +9,7 @@ Plug 'mileszs/ack.vim'
 Plug 'honza/vim-snippets'
 Plug 'airblade/vim-gitgutter'
 Plug 'ddollar/nerdcommenter'
+Plug 'nathanaelkane/vim-indent-guides'
 
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -41,4 +42,3 @@ Plug 'jparise/vim-graphql'
 "
 " Solarized theme
 Plug 'iCyMind/NeoSolarized'
-
