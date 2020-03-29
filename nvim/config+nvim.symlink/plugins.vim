@@ -11,6 +11,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ddollar/nerdcommenter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'easymotion/vim-easymotion'
+Plug 'camspiers/lens.vim'
 
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
