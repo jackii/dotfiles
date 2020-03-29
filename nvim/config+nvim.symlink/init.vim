@@ -28,6 +28,7 @@ exe 'source ' . s:path . '/custom/plugins/fzf.vim'
 exe 'source ' . s:path . '/custom/plugins/ack.vim'
 exe 'source ' . s:path . '/custom/plugins/neosolarized.vim'
 exe 'source ' . s:path . '/custom/plugins/vim-jsx-improve.vim'
+exe 'source ' . s:path . '/custom/plugins/nerdcommenter.vim'
 
 exe 'source ' . s:path . '/custom/plugins/coc.vim'
 
