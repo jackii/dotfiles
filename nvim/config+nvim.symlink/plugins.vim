@@ -12,6 +12,8 @@ Plug 'ddollar/nerdcommenter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'easymotion/vim-easymotion'
 Plug 'camspiers/lens.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }

@@ -32,6 +32,8 @@ exe 'source ' . s:path . '/custom/plugins/nerdcommenter.vim'
 exe 'source ' . s:path . '/custom/plugins/indent-guide.vim'
 exe 'source ' . s:path . '/custom/plugins/vim-easymotion.vim'
 exe 'source ' . s:path . '/custom/plugins/lens.vim'
+exe 'source ' . s:path . '/custom/plugins/vim-airline.vim'
+exe 'source ' . s:path . '/custom/plugins/vim-gitgutter.vim'
 
 exe 'source ' . s:path . '/custom/plugins/coc.vim'
 
