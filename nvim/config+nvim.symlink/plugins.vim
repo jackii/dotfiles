@@ -6,6 +6,8 @@
 "
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'mileszs/ack.vim'
+Plug 'honza/vim-snippets'
+Plug 'airblade/vim-gitgutter'
 
 " NERDTree
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -14,7 +16,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Coc.vim related plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'honza/vim-snippets'
 
 " Langusges support
 "
