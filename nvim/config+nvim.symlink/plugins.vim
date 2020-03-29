@@ -14,6 +14,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Coc.vim related plugins
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'honza/vim-snippets'
 
 " Langusges support
 "
