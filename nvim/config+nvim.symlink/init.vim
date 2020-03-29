@@ -16,6 +16,12 @@ exe 'source ' . s:path . '/custom/mappings.vim'
 let g:loaded_netrw        = 1
 let g:loaded_netrwPlugin  = 1
 
+" Enable python3
+" https://github.com/tweekmonster/nvim-python-doctor/wiki/Advanced:-Using-pyenv#tips-for-using-pyenv
+let g:python3_host_prog = '/usr/local/var/pyenv/versions/neovim3/bin/python'
+" Enable python2
+let g:python_host_prog = '/usr/local/var/pyenv/versions/neovim2/bin/python'
+
 " Load plugin customizations
 exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
