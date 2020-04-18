@@ -150,7 +150,8 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-css',
   \ 'coc-html',
-  \ 'coc-snippets'
+  \ 'coc-snippets',
+  \ 'coc-solargraph'
   \ ]
 
 " https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim#prettier-and-eslint

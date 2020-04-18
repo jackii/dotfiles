@@ -26,6 +26,9 @@
     "trailingComma": "all",
     "tslintIntegration": true,
   },
+  "solargraph": {
+    "useBundler": true,
+  },
   "tsserver": {
     "formatOnType": true,
   },

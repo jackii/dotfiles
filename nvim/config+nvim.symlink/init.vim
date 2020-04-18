@@ -22,6 +22,9 @@ let g:python3_host_prog = '/usr/local/var/pyenv/versions/neovim3/bin/python'
 " Enable python2
 let g:python_host_prog = '/usr/local/var/pyenv/versions/neovim2/bin/python'
 
+" Enable ruby provider
+let g:ruby_host_prog = '~/.rbenv/versions/2.7.0/gemsets/neovim/bin/neovim-ruby-host'
+
 " Load plugin customizations
 exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
